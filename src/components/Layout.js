@@ -6,7 +6,7 @@ import Nav from './Navigation';
 const Layout = ({ children }) => (
   <> 
     <Nav />
-    <main>{children}</main>
+    <main className="bg-slate-50 min-h-screen p-6 pt-20">{children}</main>
   </>
 );
 
