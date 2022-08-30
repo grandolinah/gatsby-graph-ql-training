@@ -30,6 +30,14 @@ module.exports = {
         icon: `src/images/avatar.webp`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-postcss',
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/pages/blog`,
+      },
+    },
   ],
 }
